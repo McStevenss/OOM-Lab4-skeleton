@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -38,16 +39,15 @@ public class TimeZoneTest {
 		
 		DateTime eventStart = new DateTime(2018, 8, 10, 12, 30, 0);
 		DateTime eventEnd = new DateTime(2018, 8, 10, 14, 30, 0);		
-		Person Mans = new Person("Mans");
-		Person Rabert = new Person("Robert");
 		Place JU = new Place("JU", 0.0, 0.0, 0.0);
+		Set<Participant> participant = null;
 		
 		DateTime eventIKnowStart = new DateTime(2018,8,10,16,30,0);
 		DateTime eventIKnowEnd = new DateTime(2018, 8, 10, 18, 30, 0);
 		
-		Event testiKnow = new Event("Meme Conference", eventIKnowStart, eventIKnowEnd,  new HashSet<>(Arrays.asList(Rabert, Mans)), JU);
+		Event testiKnow = new Event("Meme Conference", eventIKnowStart, eventIKnowEnd,  participant, JU);
 			
-		Event test = new Event("Meme Conference", eventStart, eventEnd, new HashSet<>(Arrays.asList(Rabert, Mans)), JU);	
+		Event test = new Event("Meme Conference", eventStart, eventEnd, participant, JU);	
 		test = TimeZoneTranslator.shiftEventTimeZone(test, TimeZone.GREENWICH_UTC, TimeZone.UNITED_ARAB_EMIRATES);
 		
 		System.out.println(test.toString());
