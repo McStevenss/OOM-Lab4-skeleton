@@ -16,35 +16,35 @@ public class TimeZoneTranslator {
 		
 		while(!(targetHour > 0 && targetHour < 24 || day > 1 && day < 31 || month > 1 && month < 12))
 		{
-		if(targetHour < 0)
-		{
-			targetHour = targetHour+24;
-			day--;	
-		}
-		else if(targetHour > 24)
-		{
-			targetHour = targetHour-24;
-		}
-		if(day < 1)
-		{
-			day = day +31;
-			month--;
-		}
-		else if(day > 31)
-		{
-			day = day-31;
-			month++;
-		}
-		if(month < 1)
-		{
-			month = month+12;
-			year--;
-		}
-		else if(month > 12)
-		{
-			month = month-12;
-			year++;
-		}
+			if(targetHour < 0)
+			{
+				targetHour = targetHour+24;
+				day--;	
+			}
+			else if(targetHour > 24)
+			{
+				targetHour = targetHour-24;
+			}
+			if(day < 1)
+			{
+				day = day +31;
+				month--;
+			}
+			else if(day > 31)
+			{
+				day = day-31;
+				month++;
+			}
+			if(month < 1)
+			{
+				month = month+12;
+				year--;
+			}
+			else if(month > 12)
+			{
+				month = month-12;
+				year++;
+			}
 		}
 		
 		
