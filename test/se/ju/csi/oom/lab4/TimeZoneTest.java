@@ -38,7 +38,7 @@ public class TimeZoneTest {
 		
 		DateTime eventStart = new DateTime(2018, 8, 10, 12, 30, 0);
 		DateTime eventEnd = new DateTime(2018, 8, 10, 14, 30, 0);		
-		Person Mans = new Person("Måns");
+		Person Mans = new Person("Mans");
 		Person Rabert = new Person("Robert");
 		Place JU = new Place("JU", 0.0, 0.0, 0.0);
 		
