@@ -15,7 +15,7 @@ class TimeTesting {
 	void test() {
 //		fail("Not yet implemented");
 		
-		String timeThatIKnow = "2018-08-10 13:10";
+		String timeThatIKnow = "2018-08-10 13:10:00";
 		System.out.println(timeThatIKnow);
 		DateTime timeToTest = new DateTime(2018, 8, 10, 13, 10, 0);
 		System.out.println(timeToTest);
