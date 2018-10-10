@@ -32,7 +32,6 @@ class TimeTesting {
 		
 		assertEquals(timeThatIKnow, stringToTest);
 		
-		
 	}
 
 }
