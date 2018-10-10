@@ -1,13 +1,13 @@
 package se.ju.csi.oom.lab4;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 class TimeTesting {
 
-	@BeforeEach
+	@Before
 	void setUp() throws Exception {
 	}
 
