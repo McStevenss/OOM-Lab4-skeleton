@@ -22,7 +22,7 @@ class TimeTesting {
 		
 		String stringToTest = timeToTest.toString();
 
-		assertEquals(timeThatIKnow, stringToTest);
+		assertEquals(timeThatIKnow, stringToTest); 
 		
 		
 		DateTime dateToTest;
