@@ -38,7 +38,7 @@ public class TimeZoneTest {
 //		fail("Not yet implemented");
 		
 		DateTime eventStart = new DateTime(2018, 8, 10, 12, 30, 0);
-		DateTime eventEnd = new DateTime(2018, 8, 10, 14, 30, 0);		
+		DateTime eventEnd = new DateTime(2018, 8, 10, 14, 30, 0);
 		Place JU = new Place("JU", 0.0, 0.0, 0.0);
 		Set<Participant> participant = null;
 		
